@@ -1,0 +1,255 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background:linear-gradient(90deg, #ece9e6 0%,#ffffff 100% );
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+header {
+  background-image: url('../img/church.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 90vh;
+  border-bottom:#333 solid 3px;
+}
+
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  padding-top: 17em;
+}
+
+#title-header {
+  font-family: Oswald, Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  margin-top: 5%;
+}
+
+.container {
+  margin: auto;
+}
+
+
+/* LOGO DA NAV-BAR */
+#logo {
+  position: relative;
+  margin: 10px;
+  float: left;
+}
+
+#logo img {
+  width: 130px;
+}
+
+nav {
+  margin: auto;
+  text-align: center;
+  width: 75%;
+}
+
+
+/* MENU DA BARRA DE NAVEGAÇÃO */
+.menu {
+  list-style:none;
+  float: right;
+  margin-top: 3%;
+}
+
+.menu li {
+  position: relative;
+  float: left;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  display: block;
+}
+
+.menu li a:hover {
+  background: #333;
+  color: #fff;
+  text-shadow: 0px 0px 5px #fff;
+}
+
+
+/* SUB-MENU DA BARRA DE NAVEGAÇÃO */
+.menu li ul {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  background-color: #333;
+  display: none;
+}
+
+.menu li:hover ul, .menu li.over ul {display: block;}
+
+.menu li ul li {
+  display: block;
+  width: 150px;
+}
+
+main {margin-top: 30px;}
+
+#logo-section {text-align: center;}
+
+#logo-section img{width: 200px;}
+
+#titulo-main-home {
+  color: #3d4355;
+  font-size: 22px;
+}
+
+.artigo-home {
+  text-align: center;
+  font-size: 20px;
+  color: #777777;
+}
+
+.social-list {
+  list-style: none;
+  font-size: 2em;
+  margin: 10px;
+  text-align: center;
+}
+
+.social-list li {
+  display: inline-block;
+  margin: 10px;
+}
+
+.social-list li a{color: #bababa;}
+
+.icone-instagram a:hover {color: #cd539c;}
+
+.icone-facebook a:hover {color: #4267b3;}
+
+.icone-youtube a:hover {color: #f24423;}
+
+.icone-whatsapp a:hover {color: #4dbea4;}
+
+.icone-map a:hover {color: #d84a3c;}
+
+.icone-heart i:hover {color: #f24423;}
+
+footer {
+  background:linear-gradient(90deg, #000000 0%,#434343 100% );
+  position: relative;
+  width: 100%;
+  padding-top: 50px;
+  margin-top: 50px;
+}
+
+footer p {
+  text-align: center;
+  color: #fff;
+  font-size: small;
+  padding-top: 10px;
+}
+
+footer #contact {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 20px;
+}
+
+.infoTech {
+  margin-top: 30px;
+  padding-bottom: 5px;
+}
+
+
+@media screen and (max-width: 400px) {
+
+  header {
+    border: tomato solid 1px;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+  }
+
+  nav {
+    border: white solid 1px;
+    display: inline-block;
+    width: 100%;
+  }
+
+
+  #title-header {
+    font-family: Oswald, Arial, Helvetica, sans-serif;
+    font-size: 27px;
+    margin-top: 5%;
+  }
+
+  .menu {
+    list-style:none;
+    float: right;
+    margin-top: 3%;
+  }
+  
+  .menu li {
+    position: relative;
+    float: left;
+  }
+  
+  .menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+  }
+  
+  .menu li a:active {
+    background: #333;
+    color: #fff;
+    text-shadow: 0px 0px 5px #fff;
+  }
+  
+  
+  /* SUB-MENU DA BARRA DE NAVEGAÇÃO */
+  .menu li ul {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    background-color: #333;
+    display: none;
+  }
+  
+  .menu li:active ul, .menu li.over ul {display: block;}
+  
+  .menu li ul li {
+    display: block;
+    width: 150px;
+  }
+  
+
+  #logo {
+    width: 100%;
+  }
+
+  .artigo-home {
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: #777777;
+  }
+
+  .infoTech {
+    margin-top: 30px;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-bottom: 5px;
+  }
+}
